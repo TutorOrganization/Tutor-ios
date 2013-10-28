@@ -8,6 +8,8 @@
 
 #import "WelcomeViewController.h"
 #import "UIImage+NSBundle.h"
+#import "LoginViewController.h"
+#import "CustomTabBarViewController.h"
 
 @interface WelcomeViewController ()
 
@@ -58,12 +60,14 @@
 
 - (void)touchUpFindTutor:(UIButton *)sender
 {
-
+    CustomTabBarViewController *custTabBarViewCol = [[CustomTabBarViewController alloc] init];
+    [self.navigationController pushViewController:custTabBarViewCol animated:YES];
 }
 
 - (void)touchUpDoTutor:(UIButton *)sender
 {
-
+    LoginViewController *loginViewCol = [[LoginViewController alloc] init];
+    [self.navigationController pushViewController:loginViewCol animated:YES];
 }
 
 - (void)didReceiveMemoryWarning
