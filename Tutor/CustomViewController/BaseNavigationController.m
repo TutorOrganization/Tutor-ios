@@ -71,7 +71,7 @@
 - (void)setBarTitle:(NSString *)strTitle
 {
     _lblTitle.text = strTitle;
-    _lblTitle.center = CGPointMake(self.view.center.x, NavigationBar_HEIGHT / 2.0 + 20);
+    _lblTitle.center = CGPointMake(self.view.center.x, NavigationBar_HEIGHT / 2.0 + _orginY);
 }
 
 - (void)setBarTitleColor:(UIColor *)color
@@ -84,7 +84,7 @@
     UIImage *imgBtn = [UIImage imageWithBundleName:strImage];
     _imgLeft.image = imgBtn;
     [_imgLeft setFrame:CGRectMake(_btnLeft.frame.origin.x, _btnLeft.frame.origin.y, imgBtn.size.width / 2.0, imgBtn.size.height / 2.0)];
-    _imgLeft.center = CGPointMake(40, NavigationBar_HEIGHT / 2.0 + 20);
+    _imgLeft.center = CGPointMake(40, NavigationBar_HEIGHT / 2.0 + _orginY);
 }
 
 - (void)addRightButton:(NSString *)strImage
@@ -92,7 +92,7 @@
     UIImage *imgBtn = [UIImage imageWithBundleName:strImage];
     _imgRight.image = imgBtn;
     [_imgRight setFrame:CGRectMake(_btnRight.frame.origin.x, _btnRight.frame.origin.y, imgBtn.size.width / 2.0, imgBtn.size.height / 2.0)];
-    _imgRight.center = CGPointMake(SCREEN_WIDTH - 30, NavigationBar_HEIGHT / 2.0 + 20);
+    _imgRight.center = CGPointMake(SCREEN_WIDTH - 30, NavigationBar_HEIGHT / 2.0 + _orginY);
 }
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= 70000

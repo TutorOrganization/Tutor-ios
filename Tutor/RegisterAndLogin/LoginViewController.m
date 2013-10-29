@@ -99,13 +99,13 @@
     btnLogin.backgroundColor = [UIColor clearColor];
     [self.view addSubview:btnLogin];
     
-    UIButton *btnLookLook = [[UIButton alloc] initWithFrame:CGRectMake(10, SCREEN_HEIGHT - 69 / 2.0 - 20, 290 / 2.0, 69 / 2.0)];
+    UIButton *btnLookLook = [[UIButton alloc] initWithFrame:CGRectMake(10, SCREEN_HEIGHT - 69 / 2.0 - 20 - 20 + _orginY, 290 / 2.0, 69 / 2.0)];
     [btnLookLook setImage:[UIImage imageWithBundleName:@"btnLook.png"] forState:UIControlStateNormal];
     [btnLookLook addTarget:self action:@selector(lookAround:) forControlEvents:UIControlEventTouchUpInside];
     btnLookLook.backgroundColor = [UIColor clearColor];
     [self.view addSubview:btnLookLook];
     
-    UIButton *btnNewUserRegister = [[UIButton alloc] initWithFrame:CGRectMake(20 + 290 / 2.0, btnLookLook.frame.origin.y, 290 / 2.0, 69 / 2.0)];
+    UIButton *btnNewUserRegister = [[UIButton alloc] initWithFrame:CGRectMake(20 + 290 / 2.0, SCREEN_HEIGHT - 69 / 2.0 - 20 - 20 + _orginY, 290 / 2.0, 69 / 2.0)];
     [btnNewUserRegister setImage:[UIImage imageWithBundleName:@"btnNewRegister.png"] forState:UIControlStateNormal];
     [btnNewUserRegister addTarget:self action:@selector(newUserRegister:) forControlEvents:UIControlEventTouchUpInside];
     btnNewUserRegister.backgroundColor = [UIColor clearColor];
