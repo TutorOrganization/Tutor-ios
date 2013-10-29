@@ -1,9 +1,9 @@
 //
-//  KnoalaRequest.m
+//  SYRequest.m
 //  Knoala
 //
 //  Created by syzhou on 13-7-6.
-//  Copyright (c) 2013年 Gong Xuehan. All rights reserved.
+//  Copyright (c) 2013年 syzhou. All rights reserved.
 //
 
 #import "SYRequest.h"
@@ -14,7 +14,7 @@ NSString * const NetworkRequestErrorDomain = @"KnoalaRequestErrorDomain";
 
 #define TimeOut 10
 
-@interface KnoalaRequest ()
+@interface SYRequest ()
 
 @property (nonatomic, strong)   NSMutableArray *marrayFile;
 
@@ -28,7 +28,7 @@ NSString * const NetworkRequestErrorDomain = @"KnoalaRequestErrorDomain";
 
 @end
 
-@implementation KnoalaRequest
+@implementation SYRequest
 
 @synthesize url = _url;
 @synthesize marrayPostData = _marrayPostData;
@@ -178,7 +178,7 @@ NSString * const NetworkRequestErrorDomain = @"KnoalaRequestErrorDomain";
     
 	// If we were given the path to a file, and the user didn't specify a mime type, we can detect it from the file extension
 	if (!contentType) {
-		contentType = [KnoalaRequest mimeTypeForFileAtPath:filePath];
+		contentType = [SYRequest mimeTypeForFileAtPath:filePath];
 	}
 	[self addData:[NSData dataWithContentsOfFile:filePath] withFileName:fileName andContentType:contentType forKey:key];
 }

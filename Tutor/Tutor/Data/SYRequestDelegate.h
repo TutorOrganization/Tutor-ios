@@ -3,7 +3,7 @@
 //  Knoala
 //
 //  Created by syzhou on 13-7-6.
-//  Copyright (c) 2013年 Gong Xuehan. All rights reserved.
+//  Copyright (c) 2013年 syzhou. All rights reserved.
 //
 
 #ifndef Knoala_KnoalaRequestDelegate_h

@@ -1,9 +1,9 @@
 //
-//  KnoalaDataProvider.m
-//  Knoala
+//  TutorDataProvider.m
+//  Tutor
 //
-//  Created by syzhou on 13-7-10.
-//  Copyright (c) 2013年 Gong Xuehan. All rights reserved.
+//  Created by syzhou on 13-10-29.
+//  Copyright (c) 2013年 syzhou. All rights reserved.
 //
 
 #import "TutorDataProvider.h"
