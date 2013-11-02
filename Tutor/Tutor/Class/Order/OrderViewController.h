@@ -9,6 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "BaseNavigationController.h"
 
-@interface OrderViewController : BaseNavigationController
+@interface OrderViewController : BaseNavigationController <UITableViewDelegate,UITableViewDataSource>{
+    UITableView *_tableView;
+    NSMutableArray *_marrayDatasource;
+}
 
 @end

@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UILabel+SY.h"
 
 @interface OrderCell : UITableViewCell
+
+@property (nonatomic, strong) UILabel *lblClassName;
+@property (nonatomic, strong) UILabel *lblClassTime;
+@property (nonatomic, strong) UILabel *lblOrderStatus;
+@property (nonatomic, strong) UIImageView *imgvOrderType;
 
 @end

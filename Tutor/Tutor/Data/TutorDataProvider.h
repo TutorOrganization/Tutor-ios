@@ -10,6 +10,8 @@
 #import <Foundation/Foundation.h>
 #import "SYRequest.h"
 
+#define ServerUrl @"http://121.199.29.230/api"
+
 typedef enum {
     GetOldType= 0,
     GetNewType,
@@ -21,5 +23,6 @@ typedef enum {
 
 + (void)clearCookies;
 
+//+(SYRequest *)login
 
 @end

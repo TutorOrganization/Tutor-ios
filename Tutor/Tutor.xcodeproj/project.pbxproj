@@ -62,6 +62,8 @@
 		3E2E0378181FEEA900B0EE49 /* declarationBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E0354181FEEA900B0EE49 /* declarationBG.png */; };
 		3E2E037A181FEEA900B0EE49 /* loginInputView.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E0356181FEEA900B0EE49 /* loginInputView.png */; };
 		3E2E037B181FEEA900B0EE49 /* topbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E0357181FEEA900B0EE49 /* topbar.png */; };
+		3E78FFD41822B33100641616 /* OrderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E78FFD31822B33100641616 /* OrderCell.m */; };
+		3E78FFD71822B7D200641616 /* UILabel+SY.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E78FFD61822B7D200641616 /* UILabel+SY.m */; };
 		3EB1785B181D781000A28C0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB1785A181D781000A28C0C /* Foundation.framework */; };
 		3EB1785D181D781000A28C0C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB1785C181D781000A28C0C /* CoreGraphics.framework */; };
 		3EB1785F181D781000A28C0C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB1785E181D781000A28C0C /* UIKit.framework */; };
@@ -168,6 +170,10 @@
 		3E2E0354181FEEA900B0EE49 /* declarationBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = declarationBG.png; sourceTree = "<group>"; };
 		3E2E0356181FEEA900B0EE49 /* loginInputView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginInputView.png; sourceTree = "<group>"; };
 		3E2E0357181FEEA900B0EE49 /* topbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar.png; sourceTree = "<group>"; };
+		3E78FFD21822B33100641616 /* OrderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderCell.h; sourceTree = "<group>"; };
+		3E78FFD31822B33100641616 /* OrderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderCell.m; sourceTree = "<group>"; };
+		3E78FFD51822B7D200641616 /* UILabel+SY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SY.h"; sourceTree = "<group>"; };
+		3E78FFD61822B7D200641616 /* UILabel+SY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SY.m"; sourceTree = "<group>"; };
 		3EB17857181D781000A28C0C /* Tutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EB1785A181D781000A28C0C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3EB1785C181D781000A28C0C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -273,6 +279,8 @@
 				3E2E031B181FEEA900B0EE49 /* Toolkit.m */,
 				3E2E031C181FEEA900B0EE49 /* UIImage+NSBundle.h */,
 				3E2E031D181FEEA900B0EE49 /* UIImage+NSBundle.m */,
+				3E78FFD51822B7D200641616 /* UILabel+SY.h */,
+				3E78FFD61822B7D200641616 /* UILabel+SY.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -330,6 +338,8 @@
 			children = (
 				3E2E0331181FEEA900B0EE49 /* OrderViewController.h */,
 				3E2E0332181FEEA900B0EE49 /* OrderViewController.m */,
+				3E78FFD21822B33100641616 /* OrderCell.h */,
+				3E78FFD31822B33100641616 /* OrderCell.m */,
 			);
 			path = Order;
 			sourceTree = "<group>";
@@ -618,9 +628,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E78FFD41822B33100641616 /* OrderCell.m in Sources */,
 				3E267079181FF97A002EFEAA /* SBJsonParser.m in Sources */,
 				3E2E0359181FEEA900B0EE49 /* UIImage+NSBundle.m in Sources */,
 				3E2E035F181FEEA900B0EE49 /* OrderViewController.m in Sources */,
+				3E78FFD71822B7D200641616 /* UILabel+SY.m in Sources */,
 				3E267075181FF97A002EFEAA /* NSObject+SBJSON.m in Sources */,
 				3E2E035B181FEEA900B0EE49 /* CustomTabBarViewController.m in Sources */,
 				3E2E0358181FEEA900B0EE49 /* Toolkit.m in Sources */,

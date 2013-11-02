@@ -16,4 +16,6 @@
 #define kChinese @"Chinese"
 #define kEnglish @"English"
 
+#define BackGroundColor RGBCOLOR(245.0,245.0,245.0)
+
 #endif
