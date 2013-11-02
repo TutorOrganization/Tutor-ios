@@ -46,10 +46,9 @@
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-     UITouch *touch = [touches anyObject];
-    CGPoint localPoint = [touch locationInView:self];
-    
     if (_edit) {
+        UITouch *touch = [touches anyObject];
+        CGPoint localPoint = [touch locationInView:self];
         self.fStar = localPoint.x / 23;
     }
 }
