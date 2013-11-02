@@ -9,6 +9,9 @@
 #import "AppDelegate.h"
 
 #import "WelcomeViewController.h"
+#import "TutorDataProvider.h"
+
+#define Test 1
 
 @implementation AppDelegate
 
@@ -22,7 +25,27 @@
     navigationController.navigationBarHidden = YES;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    if (Test) {
+        [self testReruest];
+    }
+    
+    
     return YES;
+}
+
+- (void)testReruest {
+    BACK(^{
+//        [TutorDataProvider registeWithMobile:@"18621103111" password:@"111111" handle:^(SYRequest *request) {
+//            DLog(@"register:%@",request.responseString);
+//
+//        }];
+        [TutorDataProvider registeWithMobile:@"18621103111" password:@"1111115" handle:^(SYRequest *request) {
+            DLog(@"register:%@",request.responseString);
+            
+        }];
+    });
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

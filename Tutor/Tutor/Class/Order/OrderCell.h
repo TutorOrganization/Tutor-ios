@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UILabel+SY.h"
+#import "StarView.h"
 
 @interface OrderCell : UITableViewCell
 
@@ -15,5 +16,8 @@
 @property (nonatomic, strong) UILabel *lblClassTime;
 @property (nonatomic, strong) UILabel *lblOrderStatus;
 @property (nonatomic, strong) UIImageView *imgvOrderType;
+@property (nonatomic, strong) StarView *vStar;
+
+@property (nonatomic, strong) NSDictionary *dictOrderInfo;
 
 @end
