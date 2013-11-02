@@ -10,4 +10,7 @@
 
 @interface UILabel (SY)
 
++ (id)createLabelWithFrame:(CGRect)rect font:(UIFont *)font  addView:(UIView *)superView;
++ (id)createLabelWithFrame:(CGRect)rect font:(UIFont *)font textAligment:(UITextAlignment)alignment addView:(UIView *)superView;
+
 @end
