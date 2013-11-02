@@ -7,6 +7,8 @@
 //
 
 #import "LoginViewController.h"
+#import "AffirmViewController.h"
+#import "RegisterViewController.h"
 
 #define kTextFiledUserName 100
 #define kTextFiledUserPassWord 101
@@ -129,14 +131,21 @@
     [self resignKeyBoard];
 }
 
+#pragma mark - 随便看看
 - (void)lookAround:(UIButton *)sender
 {
     [self resignKeyBoard];
+    
+    AffirmViewController *affirmViewCol = [[AffirmViewController alloc] init];
+    affirmViewCol.affirmUser = StudentAffirm;
+    [self.navigationController pushViewController:affirmViewCol animated:YES];
 }
 
 - (void)newUserRegister:(UIButton *)sender
 {
     [self resignKeyBoard];
+    RegisterViewController *registerViewCol = [[RegisterViewController alloc] init];
+    [self.navigationController pushViewController:registerViewCol animated:YES];
 }
 
 - (void)touchUpForgetPassWord:(UIButton *)sender

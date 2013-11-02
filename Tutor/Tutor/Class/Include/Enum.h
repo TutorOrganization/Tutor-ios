@@ -15,4 +15,10 @@ typedef enum
     ActionSheetStyleDia
 }ActionSheetStyle;
 
+typedef enum
+{
+    StudentAffirm,
+    ParentsAffirm
+}RealNameAffirmUser;
+
 #endif

@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36379C5F1823D72800F988F3 /* imgLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 36379C5E1823D72800F988F3 /* imgLogo.png */; };
+		36379C621823D7AA00F988F3 /* AffirmViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36379C611823D7AA00F988F3 /* AffirmViewController.m */; };
+		36379C641823DF7500F988F3 /* shortCellAffirm.png in Resources */ = {isa = PBXBuildFile; fileRef = 36379C631823DF7500F988F3 /* shortCellAffirm.png */; };
+		36379C661823E20900F988F3 /* btnAffirmCode.png in Resources */ = {isa = PBXBuildFile; fileRef = 36379C651823E20900F988F3 /* btnAffirmCode.png */; };
+		36379C681823E7B800F988F3 /* backGroundAffirmBig.png in Resources */ = {isa = PBXBuildFile; fileRef = 36379C671823E7B800F988F3 /* backGroundAffirmBig.png */; };
+		36379C6A1823E99100F988F3 /* backGroundAffirmSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 36379C691823E99100F988F3 /* backGroundAffirmSmall.png */; };
+		36379C6C1823EACD00F988F3 /* cellLineAffirm.png in Resources */ = {isa = PBXBuildFile; fileRef = 36379C6B1823EACD00F988F3 /* cellLineAffirm.png */; };
+		36379C6E1823EBB600F988F3 /* btnAffirmInfo.png in Resources */ = {isa = PBXBuildFile; fileRef = 36379C6D1823EBB600F988F3 /* btnAffirmInfo.png */; };
+		36379C701823F09000F988F3 /* documentAffirmBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 36379C6F1823F09000F988F3 /* documentAffirmBG.png */; };
+		36379C721823F1D700F988F3 /* demoPerCard.png in Resources */ = {isa = PBXBuildFile; fileRef = 36379C711823F1D700F988F3 /* demoPerCard.png */; };
+		36379C741823F32B00F988F3 /* btnRightArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 36379C731823F32B00F988F3 /* btnRightArrow.png */; };
+		36379C761823F64500F988F3 /* btnFinish.png in Resources */ = {isa = PBXBuildFile; fileRef = 36379C751823F64500F988F3 /* btnFinish.png */; };
 		3E267064181FF633002EFEAA /* TutorDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E267060181FF633002EFEAA /* TutorDataProvider.m */; };
 		3E267065181FF633002EFEAA /* SYRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E267062181FF633002EFEAA /* SYRequest.m */; };
 		3E267075181FF97A002EFEAA /* NSObject+SBJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E26706A181FF97A002EFEAA /* NSObject+SBJSON.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -48,7 +60,6 @@
 		3E2E0376181FEEA900B0EE49 /* btnRegister.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E0352181FEEA900B0EE49 /* btnRegister.png */; };
 		3E2E0377181FEEA900B0EE49 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E0353181FEEA900B0EE49 /* check.png */; };
 		3E2E0378181FEEA900B0EE49 /* declarationBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E0354181FEEA900B0EE49 /* declarationBG.png */; };
-		3E2E0379181FEEA900B0EE49 /* imgLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E0355181FEEA900B0EE49 /* imgLogo.png */; };
 		3E2E037A181FEEA900B0EE49 /* loginInputView.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E0356181FEEA900B0EE49 /* loginInputView.png */; };
 		3E2E037B181FEEA900B0EE49 /* topbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3E2E0357181FEEA900B0EE49 /* topbar.png */; };
 		3EB1785B181D781000A28C0C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB1785A181D781000A28C0C /* Foundation.framework */; };
@@ -76,6 +87,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		36379C5E1823D72800F988F3 /* imgLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgLogo.png; sourceTree = "<group>"; };
+		36379C601823D7AA00F988F3 /* AffirmViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AffirmViewController.h; sourceTree = "<group>"; };
+		36379C611823D7AA00F988F3 /* AffirmViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AffirmViewController.m; sourceTree = "<group>"; };
+		36379C631823DF7500F988F3 /* shortCellAffirm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shortCellAffirm.png; sourceTree = "<group>"; };
+		36379C651823E20900F988F3 /* btnAffirmCode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnAffirmCode.png; sourceTree = "<group>"; };
+		36379C671823E7B800F988F3 /* backGroundAffirmBig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGroundAffirmBig.png; sourceTree = "<group>"; };
+		36379C691823E99100F988F3 /* backGroundAffirmSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backGroundAffirmSmall.png; sourceTree = "<group>"; };
+		36379C6B1823EACD00F988F3 /* cellLineAffirm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cellLineAffirm.png; sourceTree = "<group>"; };
+		36379C6D1823EBB600F988F3 /* btnAffirmInfo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnAffirmInfo.png; sourceTree = "<group>"; };
+		36379C6F1823F09000F988F3 /* documentAffirmBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = documentAffirmBG.png; sourceTree = "<group>"; };
+		36379C711823F1D700F988F3 /* demoPerCard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demoPerCard.png; sourceTree = "<group>"; };
+		36379C731823F32B00F988F3 /* btnRightArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnRightArrow.png; sourceTree = "<group>"; };
+		36379C751823F64500F988F3 /* btnFinish.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnFinish.png; sourceTree = "<group>"; };
 		3E26705F181FF633002EFEAA /* TutorDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorDataProvider.h; sourceTree = "<group>"; };
 		3E267060181FF633002EFEAA /* TutorDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorDataProvider.m; sourceTree = "<group>"; };
 		3E267061181FF633002EFEAA /* SYRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SYRequest.h; sourceTree = "<group>"; };
@@ -142,7 +166,6 @@
 		3E2E0352181FEEA900B0EE49 /* btnRegister.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnRegister.png; sourceTree = "<group>"; };
 		3E2E0353181FEEA900B0EE49 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		3E2E0354181FEEA900B0EE49 /* declarationBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = declarationBG.png; sourceTree = "<group>"; };
-		3E2E0355181FEEA900B0EE49 /* imgLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imgLogo.png; sourceTree = "<group>"; };
 		3E2E0356181FEEA900B0EE49 /* loginInputView.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = loginInputView.png; sourceTree = "<group>"; };
 		3E2E0357181FEEA900B0EE49 /* topbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = topbar.png; sourceTree = "<group>"; };
 		3EB17857181D781000A28C0C /* Tutor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tutor.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -329,6 +352,8 @@
 				3E2E033A181FEEA900B0EE49 /* RegisterViewController.m */,
 				3E2E033B181FEEA900B0EE49 /* WelcomeViewController.h */,
 				3E2E033C181FEEA900B0EE49 /* WelcomeViewController.m */,
+				36379C601823D7AA00F988F3 /* AffirmViewController.h */,
+				36379C611823D7AA00F988F3 /* AffirmViewController.m */,
 			);
 			path = RegisterAndLogin;
 			sourceTree = "<group>";
@@ -364,6 +389,16 @@
 		3E2E034B181FEEA900B0EE49 /* RegisterAndLogin */ = {
 			isa = PBXGroup;
 			children = (
+				36379C751823F64500F988F3 /* btnFinish.png */,
+				36379C731823F32B00F988F3 /* btnRightArrow.png */,
+				36379C711823F1D700F988F3 /* demoPerCard.png */,
+				36379C6F1823F09000F988F3 /* documentAffirmBG.png */,
+				36379C6D1823EBB600F988F3 /* btnAffirmInfo.png */,
+				36379C6B1823EACD00F988F3 /* cellLineAffirm.png */,
+				36379C691823E99100F988F3 /* backGroundAffirmSmall.png */,
+				36379C671823E7B800F988F3 /* backGroundAffirmBig.png */,
+				36379C651823E20900F988F3 /* btnAffirmCode.png */,
+				36379C631823DF7500F988F3 /* shortCellAffirm.png */,
 				3E2E034C181FEEA900B0EE49 /* btnBack.png */,
 				3E2E034D181FEEA900B0EE49 /* btnDotutor.png */,
 				3E2E034E181FEEA900B0EE49 /* btnFindtutor.png */,
@@ -372,8 +407,8 @@
 				3E2E0351181FEEA900B0EE49 /* btnNewRegister.png */,
 				3E2E0352181FEEA900B0EE49 /* btnRegister.png */,
 				3E2E0353181FEEA900B0EE49 /* check.png */,
+				36379C5E1823D72800F988F3 /* imgLogo.png */,
 				3E2E0354181FEEA900B0EE49 /* declarationBG.png */,
-				3E2E0355181FEEA900B0EE49 /* imgLogo.png */,
 				3E2E0356181FEEA900B0EE49 /* loginInputView.png */,
 				3E2E0357181FEEA900B0EE49 /* topbar.png */,
 			);
@@ -529,31 +564,41 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36379C701823F09000F988F3 /* documentAffirmBG.png in Resources */,
 				3E2E0376181FEEA900B0EE49 /* btnRegister.png in Resources */,
 				3E2E0368181FEEA900B0EE49 /* btnMineH.png in Resources */,
 				3E2E0365181FEEA900B0EE49 /* btnFirstPage.png in Resources */,
 				3E2E036F181FEEA900B0EE49 /* tabBarBG.png in Resources */,
-				3E2E0379181FEEA900B0EE49 /* imgLogo.png in Resources */,
 				3E2E037B181FEEA900B0EE49 /* topbar.png in Resources */,
 				3E2E0377181FEEA900B0EE49 /* check.png in Resources */,
 				3E2E0372181FEEA900B0EE49 /* btnFindtutor.png in Resources */,
+				36379C741823F32B00F988F3 /* btnRightArrow.png in Resources */,
 				3E2E036C181FEEA900B0EE49 /* btnOrder.png in Resources */,
 				3EB17865181D781000A28C0C /* InfoPlist.strings in Resources */,
+				36379C6E1823EBB600F988F3 /* btnAffirmInfo.png in Resources */,
 				3E2E0374181FEEA900B0EE49 /* btnLook.png in Resources */,
 				3E2E036D181FEEA900B0EE49 /* btnPublish.png in Resources */,
 				3E2E0371181FEEA900B0EE49 /* btnDotutor.png in Resources */,
 				3EB1786D181D781100A28C0C /* Images.xcassets in Resources */,
+				36379C681823E7B800F988F3 /* backGroundAffirmBig.png in Resources */,
 				3E2E0370181FEEA900B0EE49 /* btnBack.png in Resources */,
 				3E2E036E181FEEA900B0EE49 /* btnPublishH.png in Resources */,
 				3E2E0364181FEEA900B0EE49 /* arrowDown.png in Resources */,
 				3E2E037A181FEEA900B0EE49 /* loginInputView.png in Resources */,
+				36379C721823F1D700F988F3 /* demoPerCard.png in Resources */,
 				3E2E0373181FEEA900B0EE49 /* btnLogin.png in Resources */,
 				3E2E036A181FEEA900B0EE49 /* btnMoreH.png in Resources */,
 				3E2E0369181FEEA900B0EE49 /* btnMore.png in Resources */,
+				36379C761823F64500F988F3 /* btnFinish.png in Resources */,
+				36379C661823E20900F988F3 /* btnAffirmCode.png in Resources */,
 				3E2E0375181FEEA900B0EE49 /* btnNewRegister.png in Resources */,
 				3E2E0366181FEEA900B0EE49 /* btnFirstPageH.png in Resources */,
+				36379C6A1823E99100F988F3 /* backGroundAffirmSmall.png in Resources */,
 				3E2E0367181FEEA900B0EE49 /* btnMine.png in Resources */,
 				3E2E036B181FEEA900B0EE49 /* btnOderH.png in Resources */,
+				36379C641823DF7500F988F3 /* shortCellAffirm.png in Resources */,
+				36379C6C1823EACD00F988F3 /* cellLineAffirm.png in Resources */,
+				36379C5F1823D72800F988F3 /* imgLogo.png in Resources */,
 				3E2E0378181FEEA900B0EE49 /* declarationBG.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -592,6 +637,7 @@
 				3E267064181FF633002EFEAA /* TutorDataProvider.m in Sources */,
 				3E267077181FF97A002EFEAA /* SBJSON.m in Sources */,
 				3E2E0360181FEEA900B0EE49 /* PublicViewController.m in Sources */,
+				36379C621823D7AA00F988F3 /* AffirmViewController.m in Sources */,
 				3E267078181FF97A002EFEAA /* SBJsonBase.m in Sources */,
 				3E2E035A181FEEA900B0EE49 /* BaseNavigationController.m in Sources */,
 				3E2E035D181FEEA900B0EE49 /* MineViewController.m in Sources */,
@@ -653,7 +699,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Suge Hou (T6HN39432U)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -692,7 +738,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Suge Hou (T6HN39432U)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -727,6 +773,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Suge Hou (T6HN39432U)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tutor/Tutor-Prefix.pch";
 				INFOPLIST_FILE = "Tutor/Tutor-Info.plist";

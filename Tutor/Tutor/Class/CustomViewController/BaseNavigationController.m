@@ -29,7 +29,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
  
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor colorWithRed:245 / 255.0 green:245 / 255.0 blue:245 / 255.0 alpha:1.0f];
     if ([Toolkit isSystemIOS7])
         _orginY = 20;
     _topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, _orginY + NavigationBar_HEIGHT)];
@@ -106,7 +106,7 @@
 
 - (void)clickLeftButton:(UIButton *)sender
 {
-    NSLog(@"left button click");
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)clickRightButton:(UIButton *)sender
