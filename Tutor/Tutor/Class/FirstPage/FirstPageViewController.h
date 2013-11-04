@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "BaseNavigationController.h"
+#import "PullTableView.h"
+
 
 @interface FirstPageViewController : UIViewController
 

@@ -18,8 +18,8 @@
 {
     int _orginY;
     UIPageControl *_pageControl;
-    UITableView *_tableViewTeacher;
-    UITableView *_tableViewStudent;
+    PullTableView *_tableViewTeacher;
+    PullTableView *_tableViewStudent;
     UIImageView *_imgFilterTeacher;
     UIImageView *_imgFilterStudent;
     UIScrollView *_scrollViewBG;
@@ -155,18 +155,18 @@
         [_imgFilterStudent addSubview:btnClickPull];
     }
     
-    _tableViewTeacher = [[UITableView alloc] initWithFrame:CGRectMake(0, 71/ 2.0, SCREEN_WIDTH, _scrollViewBG.frame.size.height - 71 / 2.0) style:UITableViewStylePlain];
-    _tableViewTeacher.delegate = self;
+    _tableViewTeacher = [[PullTableView alloc] initWithFrame:CGRectMake(0, 71/ 2.0, SCREEN_WIDTH, _scrollViewBG.frame.size.height - 71 / 2.0) style:UITableViewStylePlain delegate:self];
+    _tableViewTeacher.bSurpportRefresh = YES;
+    _tableViewTeacher.bSurpportPages = YES;
     _tableViewTeacher.rowHeight = 100;
-    _tableViewTeacher.dataSource = self;
     if ([Toolkit isSystemIOS7])
         _tableViewTeacher.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     [_scrollViewBG addSubview:_tableViewTeacher];
     
-    _tableViewStudent = [[UITableView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH, 71 / 2.0, SCREEN_WIDTH, _tableViewTeacher.frame.size.height) style:UITableViewStylePlain];
-    _tableViewStudent.delegate = self;
+    _tableViewStudent = [[PullTableView alloc] initWithFrame:CGRectMake(SCREEN_WIDTH, 71 / 2.0, SCREEN_WIDTH, _tableViewTeacher.frame.size.height) style:UITableViewStylePlain delegate:self];
+    _tableViewStudent.bSurpportPages = YES;
+    _tableViewStudent.bSurpportRefresh = YES;
     _tableViewStudent.rowHeight = 100;
-    _tableViewStudent.dataSource = self;
     if ([Toolkit isSystemIOS7])
         _tableViewStudent.separatorInset = UIEdgeInsetsMake(0, 0, 0, 0);
     [_scrollViewBG addSubview:_tableViewStudent];
@@ -215,12 +215,12 @@
 }
 
 #pragma mark - UITableViewDelegate
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+- (NSInteger)tableView:(PullTableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 5;
 }
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(PullTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *reuseIdentifier = @"FirstPageReuseIdentifier";
     CustomFristPageCell *cell = [tableView dequeueReusableCellWithIdentifier:reuseIdentifier];
@@ -230,12 +230,14 @@
         cell.backgroundColor = [UIColor clearColor];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
     }
-    cell.headerView.image = [UIImage imageWithBundleName:@"btnBook.png"];
-    cell.lblName.text = @"黄先生";
-    cell.lblTitle.text = @"陆家嘴家教";
-    cell.lblCost.text = @"$ 50元/小时";
-    cell.lblDistance.text = @"3.5公里";
-    cell.lblSubject.text = @"数学，英语，语文";
+    
+    NSDictionary *dict = [tableView.marrayDataSource objectAtIndex:indexPath.row];
+    cell.headerView.image = [UIImage imageWithBundleName:[dict objectForKey:@"header"]];
+//    cell.lblName.text = @"黄先生";
+    cell.lblTitle.text = [dict objectForKey:@"title"];
+    cell.lblCost.text = [dict objectForKey:@"cost"];
+    cell.lblDistance.text = [dict objectForKey:@"distance"];
+    cell.lblSubject.text = [dict objectForKey:@"subject"];
     if (tableView == _tableViewStudent)
         cell.userType = StudentUser;
     else if (tableView == _tableViewTeacher)
@@ -244,7 +246,7 @@
     return cell;
 }
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+- (void)tableView:(PullTableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     DetailViewController *detailViewCol = [[DetailViewController alloc] init];
     [self.navigationController pushViewController:detailViewCol animated:YES];
@@ -289,5 +291,42 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+#pragma mark - PullTableview delegate
+- (void)pullTableView:(PullTableView *)pullTableView LoadingPage:(NSInteger)intPage {
+    
+    NSMutableArray *marray = [NSMutableArray array];
+    for (NSInteger i = 0; i <PageSize; i++) {
+        NSDictionary *dict = @{@"header":@"btnBook.png",
+                               @"title":@"陆家嘴家教",
+                               @"cost":@" 50元/小时",
+                               @"distance":@"3.5公里",
+                               @"subject":@"数学，英语，语文",
+                               };
+        [marray addObject:dict];
+    }
+    
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [pullTableView performSelector:@selector(LoadindDataSuccess:) withObject:marray afterDelay:0.5];
+    });
+}
+
+- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
+    if (_pageControl.currentPage == 0) {
+        [_tableViewTeacher endedDragScrollVieww:scrollView];//照写就行
+    } else {
+        [_tableViewStudent endedDragScrollVieww:scrollView];//照写就行
+    }
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    if (_pageControl.currentPage == 0) {
+        [_tableViewTeacher ifNeedLoadingNextpage:scrollView];//照写就行
+    } else {
+        [_tableViewStudent ifNeedLoadingNextpage:scrollView];//照写就行
+    }
+}
+
 
 @end

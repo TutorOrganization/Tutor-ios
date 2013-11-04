@@ -123,6 +123,7 @@
 		3EB1D9261824F903005F6F8A /* icon_RightArrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB1D9231824F903005F6F8A /* icon_RightArrow@2x.png */; };
 		3EB1D9271824F903005F6F8A /* icon_star_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB1D9241824F903005F6F8A /* icon_star_off.png */; };
 		3EB1D9281824F903005F6F8A /* icon_star_on.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EB1D9251824F903005F6F8A /* icon_star_on.png */; };
+		3EE8D5111827DDD5003BAB4E /* PullTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EE8D5101827DDD5003BAB4E /* PullTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -292,6 +293,8 @@
 		3EB1D9231824F903005F6F8A /* icon_RightArrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_RightArrow@2x.png"; sourceTree = "<group>"; };
 		3EB1D9241824F903005F6F8A /* icon_star_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_star_off.png; sourceTree = "<group>"; };
 		3EB1D9251824F903005F6F8A /* icon_star_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_star_on.png; sourceTree = "<group>"; };
+		3EE8D50F1827DDD5003BAB4E /* PullTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullTableView.h; sourceTree = "<group>"; };
+		3EE8D5101827DDD5003BAB4E /* PullTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -377,6 +380,8 @@
 		3E2E0319181FEEA900B0EE49 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				3EE8D50F1827DDD5003BAB4E /* PullTableView.h */,
+				3EE8D5101827DDD5003BAB4E /* PullTableView.m */,
 				3E2E031A181FEEA900B0EE49 /* Toolkit.h */,
 				3E2E031B181FEEA900B0EE49 /* Toolkit.m */,
 				3E2E031C181FEEA900B0EE49 /* UIImage+NSBundle.h */,
@@ -875,6 +880,7 @@
 				3E2E0360181FEEA900B0EE49 /* PublicViewController.m in Sources */,
 				3E267078181FF97A002EFEAA /* SBJsonBase.m in Sources */,
 				3E2E035A181FEEA900B0EE49 /* BaseNavigationController.m in Sources */,
+				3EE8D5111827DDD5003BAB4E /* PullTableView.m in Sources */,
 				3E2E035D181FEEA900B0EE49 /* MineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

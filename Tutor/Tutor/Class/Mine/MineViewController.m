@@ -128,5 +128,10 @@
     return 20;
 }
 
+#pragma mark - UITableview delegate
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 
 @end
