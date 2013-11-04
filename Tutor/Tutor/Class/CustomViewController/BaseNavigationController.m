@@ -29,7 +29,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
  
-    self.view.backgroundColor = [UIColor blackColor];
+    self.view.backgroundColor = [UIColor colorWithRed:245 / 255.0 green:245 / 255.0 blue:245 / 255.0 alpha:1.0f];
     if ([Toolkit isSystemIOS7])
         _orginY = 20;
     _topView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, _orginY + NavigationBar_HEIGHT)];
@@ -84,7 +84,7 @@
     UIImage *imgBtn = [UIImage imageWithBundleName:strImage];
     _imgLeft.image = imgBtn;
     [_imgLeft setFrame:CGRectMake(_btnLeft.frame.origin.x, _btnLeft.frame.origin.y, imgBtn.size.width / 2.0, imgBtn.size.height / 2.0)];
-    _imgLeft.center = CGPointMake(40, NavigationBar_HEIGHT / 2.0 + _orginY);
+    _imgLeft.center = CGPointMake(20, NavigationBar_HEIGHT / 2.0 + _orginY);
 }
 
 - (void)addRightButton:(NSString *)strImage
