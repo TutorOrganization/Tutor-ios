@@ -40,9 +40,18 @@
 //            DLog(@"register:%@",request.responseString);
 //
 //        }];
-        [TutorDataProvider registeWithMobile:@"18621103111" password:@"1111115" handle:^(SYRequest *request) {
-            DLog(@"register:%@",request.responseString);
-            
+        
+//        [TutorDataProvider registeWithMobile:@"18621103111" password:@"1111115" handle:^(SYRequest *request) {
+//            DLog(@"register:%@",request.responseString);
+//
+//        }];
+        
+//        [TutorDataProvider authenticateTeachInfoWith:@"syzhou" idc:@"123456789" address:@"上海市浦东新区" longitude:@"120.51" latitude:@"30.40" payType:@"0" card_no:@"12345679" college:@"上海交大" degree:@"1" major:@"1" handle:^(SYRequest *request) {
+//            ;
+//        }];
+        
+        [TutorDataProvider authenticateParentInfoWith:@"syzhou" idc:@"123456789" address:@"上海市浦东新区" longitude:@"120.51" latitude:@"30.40" handle:^(SYRequest *request) {
+            ;
         }];
     });
     

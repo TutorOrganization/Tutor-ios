@@ -76,4 +76,38 @@ NSString *const kLocationFollowingStartIdKey = @"cur_fid";
     handle(request);
 }
 
+
+
++ (void)authenticateTeachInfoWith:(NSString *)username idc:(NSString *)idc address:(NSString *)address longitude:(NSString *)lng latitude:(NSString *)lat payType:(NSString *)type card_no:(NSString *)cardno college:(NSString *)college degree:(NSString *)degree major:(NSString *)major handle:(handleResult)handle {
+    SYRequest *request = [SYRequest requestWithURL:[NSURL URLWithString:[ServerUrl stringByAppendingPathComponent:@"user/save_tea_info"]]];
+    [request setStrRequestMethod:@"post"];
+    [request setPostValue:username forKey:@"user_name"];
+    [request setPostValue:idc forKey:@"idc"];
+    [request setPostValue:address forKey:@"address"];
+    [request setPostValue:lng forKey:@"longitude"];
+    [request setPostValue:lat forKey:@"latitude"];
+    [request setPostValue:type forKey:@"pay_type"];
+    [request setPostValue:cardno forKey:@"card_no"];
+    [request setPostValue:cardno forKey:@"college"];
+    [request setPostValue:cardno forKey:@"degree"];
+    [request setPostValue:cardno forKey:@"major"];
+    [request startSynchronous];
+    
+    handle(request);
+}
+
++ (void)authenticateParentInfoWith:(NSString *)username idc:(NSString *)idc address:(NSString *)address longitude:(NSString *)lng latitude:(NSString *)lat handle:(handleResult)handle {
+    SYRequest *request = [SYRequest requestWithURL:[NSURL URLWithString:[ServerUrl stringByAppendingPathComponent:@"user/save_par_info"]]];
+    [request setStrRequestMethod:@"post"];
+    [request setPostValue:username forKey:@"user_name"];
+    [request setPostValue:idc forKey:@"idc"];
+    [request setPostValue:address forKey:@"address"];
+    [request setPostValue:lng forKey:@"longitude"];
+    [request setPostValue:lat forKey:@"latitude"];
+
+    [request startSynchronous];
+    
+    handle(request);
+}
+
 @end

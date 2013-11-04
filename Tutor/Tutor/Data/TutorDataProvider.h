@@ -43,5 +43,10 @@ typedef enum {
 
 + (void)loginWithMobile:(NSString *)mobile password:(NSString *)password handle:(handleResult)handle;
 
+//教师信息认证
++ (void)authenticateTeachInfoWith:(NSString *)username idc:(NSString *)idc address:(NSString *)address longitude:(NSString *)lng latitude:(NSString *)lat payType:(NSString *)type card_no:(NSString *)cardno college:(NSString *)college degree:(NSString *)degree major:(NSString *)major handle:(handleResult)handle;
+
+//家长信息认证
++ (void)authenticateParentInfoWith:(NSString *)username idc:(NSString *)idc address:(NSString *)address longitude:(NSString *)lng latitude:(NSString *)lat handle:(handleResult)handle;
 
 @end
