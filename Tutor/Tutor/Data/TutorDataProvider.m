@@ -56,5 +56,24 @@ NSString *const kLocationFollowingStartIdKey = @"cur_fid";
     }
 }
 
++(void)registeWithMobile:(NSString *)mobile  password:(NSString *)password handle:(handleResult)handle {
+    __weak SYRequest *request = [SYRequest requestWithURL:[NSURL URLWithString:[ServerUrl stringByAppendingPathComponent:@"user/register"]]];
+    [request setStrRequestMethod:@"post"];
+    [request setPostValue:mobile forKey:@"mobile_phone"];
+    [request setPostValue:password forKey:@"password"];
+    [request startSynchronous];
+    
+    handle(request);
+}
+
++ (void)loginWithMobile:(NSString *)mobile password:(NSString *)password handle:(handleResult)handle {
+    SYRequest *request = [SYRequest requestWithURL:[NSURL URLWithString:[ServerUrl stringByAppendingPathComponent:@"user/login"]]];
+    [request setStrRequestMethod:@"post"];
+    [request setPostValue:mobile forKey:@"mobile_phone"];
+    [request setPostValue:password forKey:@"password"];
+    [request startSynchronous];
+    
+    handle(request);
+}
 
 @end

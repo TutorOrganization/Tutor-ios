@@ -21,10 +21,12 @@ typedef enum
     ParentsAffirm
 }RealNameAffirmUser;
 
+
 typedef enum
 {
     StudentUser,
     TeacherUser
 }SystemUser;
+
 
 #endif

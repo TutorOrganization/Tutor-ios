@@ -106,7 +106,7 @@
 
 - (void)clickLeftButton:(UIButton *)sender
 {
-    NSLog(@"left button click");
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)clickRightButton:(UIButton *)sender

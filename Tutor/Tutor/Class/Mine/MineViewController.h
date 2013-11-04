@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "BaseNavigationController.h"
 
-@interface MineViewController : BaseNavigationController
+@interface MineViewController : BaseNavigationController <UITableViewDelegate,UITableViewDataSource> {
+    
+}
 
 @end

@@ -46,7 +46,9 @@
     }
     else if (self.affirmUser == ParentsAffirm)
     {
+
         lineRowNum = 2;
+
         inputViewBG = [[UIImageView alloc] initWithFrame:CGRectMake(10, _orginY + NavigationBar_HEIGHT + 10, SCREEN_WIDTH - 20, 179 / 2.0)];
         inputViewBG.image = [UIImage imageWithBundleName:@"backGroundAffirmBig.png"];
         inputViewBG.userInteractionEnabled = YES;
@@ -154,10 +156,12 @@
 
 }
 
+
 - (void)clickLeftButton:(UIButton *)sender
 {
     [self.navigationController popViewControllerAnimated:YES];
 }
+
 
 - (void)didReceiveMemoryWarning
 {

@@ -20,7 +20,7 @@
 #define CurrentSystemVersion ([[UIDevice currentDevice] systemVersion])
 #define CurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])
 
-#define BACKGROUND_COLOR [UIColor colorWithRed:242.0/255.0 green:236.0/255.0 blue:231.0/255.0 alpha:1.0]
+#define BACKGROUND_COLOR RGBCOLOR(245.0,245.0,245.0)
 
 
 
